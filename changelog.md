@@ -15,6 +15,7 @@
 > - Added role position and user checks to **`/anon-ban/unban`** to ensure nobody can ban themselves, unban themselves, or ban/unban any users with higher role positions than them (hard permission check still in place)
 > - Added prevention for user inputs possibly exceeding the discord character limit
 > - If the vent command is ran in a channel that is not listed, if there is at least 1 server channel listed it will direct the user to that
+> - Added timestamps to various server logs that will display in local user time zones
 
 
 # Staff approval system changes
