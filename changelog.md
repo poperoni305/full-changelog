@@ -1,3 +1,24 @@
+# Main vent feature changes
+> - The bot will now detect spoiler markdown (||) in vent content, and automatically add a trigger warning to the vent if the server is not using the staff review system and it may be triggering content
+> - Added member permission checks for vents with attached images, the bot will no longer allow members to attach images with their vents if the venting channels built in permission overrides deny that member media perms, so it cannot be bypassed
+> - Vents will now automatically be permitted to be sent in any threads of listed channels, allowing many more permitted venting channels if needed
+> - Added built in discrimination filtering to automatically catch and block any common slurs from being sent in vent content, along with moderate bypass detection (this does not use AI)
+> - Added detection and automatic blocking for attempted **@everyone** and **@here** pings. Though mentions in embeds don't work, attempting it will now be blocked
+> - Added attachment check to vents to determine if the file is a video, and block it if so due to bots being unable to embed videos
+> - Added vent reply notification, when a server member replies to your vent, the bot will DM you informing you who replied and where. These can be disabled with **`/vent-dm-disable`**, the same command to disable vent confirmation DMs
+> - Added setting commands to optionally set a role to be pinged when a vent is sent, **'/vent-ping-enable/disable'**. This role cannot be set as **@everyone** or **@here**
+
+
+# New major systems
+> - Vent attachment disabling/enabling. This setting allows server staff to decide if members should be given the ability to send images along with their vents. Enabled by default, and when disabled, images will be blocked automatically
+> - Vent reply threads. When enabled, this setting will append a button to anonymous vents, giving server members the option to anonymously create a reply thread. The vent command will work in any reply threads created, along with any configured settings. Users banned from venting via the staff command **`/anon-ban`** will not have the ability to create threads, and there is a 30 second global thread creation cool-down for all users to prevent spam
+> - Data access. There is now a fully automated command to request and see all of the data we have for you, just so there's no secrets. This command, **`/my-data`**, will provide you with a button to get a full JSON file of your data, and instructions on where to reach out to us if you would like us to delete your data
+
+
+# Completely reworked
+> - Reporting. The report system has undergone a complete remake to improve clarity with how reports are handled, how and when we'll contact you to follow up on any reports, etc. The internal side of reports has also been completely reworked, allowing us to have better and more efficient responses to reports
+
+
 # QoL improvements
 > - Full error handling revamp
 > - Full client permission check revamp to ensure the bot has necessary server permissions to function correctly
@@ -17,16 +38,6 @@
 > - If the vent command is ran in a channel that is not listed, if there is at least 1 server channel listed it will direct the user to that
 > - Added timestamps to various server logs, and all vent embeds that will display in user local time zones
 
-
-# Main vent feature changes
-> - The bot will now detect spoiler markdown (||) in vent content, and automatically add a trigger warning to the vent if the server is not using the staff review system and it may be triggering content
-> - Added member permission checks for vents with attached images, the bot will no longer allow members to attach images with their vents if the venting channels built in permission overrides deny that member media perms, so it cannot be bypassed
-> - Vents will now automatically be permitted to be sent in any threads of listed channels, allowing many more permitted venting channels if needed
-> - Added built in discrimination filtering to automatically catch and block any common slurs from being sent in vent content, along with moderate bypass detection (this does not use AI)
-> - Added detection and automatic blocking for attempted **@everyone** and **@here** pings. Though mentions in embeds don't work, attempting it will now be blocked
-> - Added attachment check to vents to determine if the file is a video, and block it if so due to bots being unable to embed videos
-> - Added vent reply notification, when a server member replies to your vent, the bot will DM you informing you who replied and where. These can be disabled with **`/vent-dm-disable`**, the same command to disable vent confirmation DMs
-> - Added setting commands to optionally set a role to be pinged when a vent is sent, **'/vent-ping-enable/disable'**. This role cannot be set as **@everyone** or **@here**
 
 # Staff approval system changes
 > - Added parameter to **`/staff-review-enable`** to optionaly set a role to be pinged when a new vent is submitted for review
