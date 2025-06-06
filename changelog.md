@@ -14,5 +14,8 @@
 > - Added attachment check to vents to determine if the file is a video, and block it if so due to bots being unable to embed videos
 > - Added role position and user checks to **`/anon-ban/unban`** to ensure nobody can ban themselves, unban themselves, or ban/unban any users with higher role positions than them (hard permission check still in place)
 > - Added prevention for user inputs possibly exceeding the discord character limit
+> - If the vent command is ran in a channel that is not listed, if there is at least 1 server channel listed it will direct the user to that
 
 
+# Staff approval system changes
+> - 
