@@ -1,7 +1,11 @@
 # New major systems
-> - ***_Vent attachment disabling/enabling_***. This setting allows server staff to decide if members should be given the ability to send images along with their vents. Enabled by default, and when disabled, images will be blocked automatically
-> - ***_Vent reply threads_***. When enabled, this setting will append a button to anonymous vents, giving server members the option to anonymously create a reply thread. The vent command will work in any reply threads created, along with any configured settings. Users banned from venting via the staff command **`/anon-ban`** will not have the ability to create threads, and there is a 30 second global thread creation cool-down for all users to prevent spam
-> - Data access. There is now a fully automated command to request and see all of the data we have for you, just so there's no secrets. This command, **`/my-data`**, will provide you with a button to get a full JSON file of your data, and instructions on where to reach out to us if you would like us to delete your data
+> - **_Vent attachment disabling/enabling_**. This setting allows server staff to decide if members should be given the ability to send images along with their vents. Enabled by default, and when disabled, images will be blocked automatically
+> - **_Vent reply threads_**. When enabled, this setting will append a button to anonymous vents, giving server members the option to anonymously create a reply thread. The vent command will work in any reply threads created, along with any configured settings. Users banned from venting via the staff command **`/anon-ban`** will not have the ability to create threads, and there is a 30 second global thread creation cool-down for all users to prevent spam
+> - **_Data access_**. There is now a fully automated command to request and see all of the data we have for you, just so there's no secrets. This command, **`/my-data`**, will provide you with a button to get a full JSON file of your data, and instructions on where to reach out to us if you would like us to delete your data
+
+
+# Completely reworked
+> - **_Reporting_**. The report system has undergone a complete remake to improve clarity with how reports are handled, how and when we'll contact you to follow up on any reports, etc. The internal side of reports has also been completely reworked, allowing us to have better and more efficient responses to reports
 
 
 # Main vent feature changes
@@ -13,11 +17,6 @@
 > - Added attachment check to vents to determine if the file is a video, and block it if so due to bots being unable to embed videos
 > - Added vent reply notification, when a server member replies to your vent, the bot will DM you informing you who replied and where. These can be disabled with **`/vent-dm-disable`**, the same command to disable vent confirmation DMs
 > - Added setting commands to optionally set a role to be pinged when a vent is sent, **'/vent-ping-enable/disable'**. This role cannot be set as **@everyone** or **@here**
-
-
-# Completely reworked
-> - Reporting. The report system has undergone a complete remake to improve clarity with how reports are handled, how and when we'll contact you to follow up on any reports, etc. The internal side of reports has also been completely reworked, allowing us to have better and more efficient responses to reports
-
 
 
 # Staff approval system changes
