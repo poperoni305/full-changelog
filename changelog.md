@@ -31,7 +31,7 @@
 # QoL improvements
 > - Full error handling revamp
 > - Full client permission check revamp to ensure the bot has necessary server permissions to function correctly
-> - Bot will now attempt to notify server owner upon required permissions being lost
+> - Bot will now attempt to notify server owner upon required permissions being lost for listed channels
 > - Upon any database error following the bot getting added to a server, it will attempt to DM the server owner informing them of the error, steps to fix it, and where to reach out for help
 > - Fun commands API request failure handlers
 > - Better handling for deleted settings channels & roles to prevent broken data
