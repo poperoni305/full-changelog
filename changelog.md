@@ -19,6 +19,7 @@
 
 
 # Staff approval system changes
+> - Added parameter to **`/staff-review-enable`** to optionall set a role to be pinged when a new vent is submitted for review
 > - Pending approval messages will no longer expire after 30 days, and will remain usable for the duration the review channel exists, the bot is in the server, and the message is not deleted
 > - Pending approval messages will now include a time stamp that will display in your local time zone
 > - Bot will now pop up a message in the review channel if a pending vent message is deleted, and give the option to DM the user informing them of the cancellation
