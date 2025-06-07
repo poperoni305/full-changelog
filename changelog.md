@@ -15,7 +15,7 @@
 > - Added built in discrimination filtering to automatically catch and block any common slurs from being sent in vent content, along with moderate bypass detection (this does not use AI)
 > - Added detection and automatic blocking for attempted **@everyone** and **@here** pings. Though mentions in embeds don't work, attempting it will now be blocked
 > - Added attachment check to vents to determine if the file is a video, and block it if so due to bots being unable to embed videos
-> - Added check to determine if vent content contains a user mention, and create a private followup informing the user that mentions in embeds to not notify if true
+> - Added check to determine if vent content contains a user or role mention, and create a private followup informing the user that mentions in embeds to not notify if true
 > - Added vent reply notification, when a server member replies to your vent, the bot will DM you informing you who replied and where. These can be disabled with **`/vent-dm-disable`**, the same command to disable vent confirmation DMs
 > - Added setting commands to optionally set a role to be pinged when a vent is sent, **'/vent-ping-enable/disable'**. This role cannot be set as **@everyone** or **@here**
 > - Buttons on vent confirmation DMs will no longer expire after 30 days, and will remain usable for the entire duration that the bot is in the server, and the vent still exists
