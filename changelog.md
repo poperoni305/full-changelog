@@ -50,7 +50,17 @@
 > - Added timestamps to various server logs, and all vent embeds that will display in user local time zones
 
 
-# Depreciated
+# Miscellaneous
+> - Added a random footer note to **`/compatibility`** based on the generated percentage
+> - The **`/duckthis`** command now features a button to get a fun fact about ducks 🦆 
+> - The **`/define`** command is now limited to being ran in age restricted channels, or in the bots DMs as it has a probability of returning offensive material, and is handled by a 3rd party API
+> - Renamed **`/server`** to **`/support`** to make it clearer at a glance 
+> - Renamed **`/privacy-policy`** to **`/policies`** as it directs to the repository with both the ToS and privacy policy
+> - Renamed **`/ping`** to **`/latency`**
+> - Added the **`/coinflip`** command, because I felt like it
+
+
+# Deprecated 
 > - The **`/song`** command has been removed due to unreliability with the API it utilizes, and the heavy resource usage that comes along with it
 > - The dev news system has been removed due to lack of use, and announcements within the support server will now be the primary way of announcing important information and updates 
-
+> - The **`/changelogs`** command has been removed due to the lack of practicality, changelogs will now be stored in a file such as this one
