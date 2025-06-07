@@ -27,6 +27,7 @@
 > - Bot will now pop up a message in the review channel if a pending vent message is deleted, and give the option to DM the author informing them of the cancellation
 > - If the bots required permissions are revoked from the logging channel, users attempting to send a vent will receive a message informing them of the issue, and instructing them to reach out to server staff
 > - If the bots required permissions are revoked from the venting channel while the vent is pending review, the "Approve" button will now properly address the error
+> - Denying + reporting a pending vent will no longer automatically ban the user from vents within the server, but instead simply give you the associated user information along with instructions to manually ban if needed. Use of this feature is closely monitored, and abuse will result in an immediate permanent blacklist from the report system
 
 
 # QoL improvements
@@ -47,3 +48,9 @@
 > - Added prevention for user inputs possibly exceeding the discord character limit
 > - If the vent command is ran in a channel that is not listed, if there is at least 1 server channel listed it will direct the user to that
 > - Added timestamps to various server logs, and all vent embeds that will display in user local time zones
+
+
+# Depreciated
+> - The **`/song`** command has been removed due to unreliability with the API it utilizes, and the heavy resource usage that comes along with it
+> - The dev news system has been removed due to lack of use, and announcements within the support server will now be the primary way of announcing important information and updates 
+
