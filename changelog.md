@@ -18,7 +18,7 @@
 > - Added check to determine if vent content contains a user mention, and create a private followup informing the user that mentions in embeds to not notify if true
 > - Added vent reply notification, when a server member replies to your vent, the bot will DM you informing you who replied and where. These can be disabled with **`/vent-dm-disable`**, the same command to disable vent confirmation DMs
 > - Added setting commands to optionally set a role to be pinged when a vent is sent, **'/vent-ping-enable/disable'**. This role cannot be set as **@everyone** or **@here**
-
+> - Buttons on vent confirmation DMs will no longer expire after 30 days, and will remain usable for the entire duration that the bot is in the server, and the vent still exists
 
 # Staff approval system changes
 > - Added parameter to **`/staff-review-enable`** to optionaly set a role to be pinged when a new vent is submitted for review
