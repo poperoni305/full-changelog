@@ -64,3 +64,4 @@
 > - The **`/song`** command has been removed due to unreliability with the API it utilizes, and the heavy resource usage that comes along with it
 > - The dev news system has been removed due to lack of use, and announcements within the support server will now be the primary way of announcing important information and updates 
 > - The **`/changelogs`** command has been removed due to the lack of practicality, changelogs will now be stored in a file such as this one
+> - Partnerships have been removed, and any current partner will be notified in advanced of the full switch to the rewrite
